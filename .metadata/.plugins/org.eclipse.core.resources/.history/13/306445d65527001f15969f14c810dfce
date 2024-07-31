@@ -1,0 +1,56 @@
+package RegularPractice;
+
+import java.util.Scanner;
+
+public class MirroredString {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a character: ");
+        String input = scanner.next();
+        
+        // Ensure the input is a single character
+        if (input.length() != 1 || !Character.isLetter(input.charAt(0))) {
+            System.out.println("Invalid input. Please enter a single alphabetic character.");
+            return;
+        }
+        
+        char userChar = input.charAt(0);
+        System.out.println("user char is:"+userChar);
+        char mirrorChar = getMirrorCharacter(userChar);
+        
+        System.out.println("Mirror character: " + mirrorChar);
+    }
+
+    public static char getMirrorCharacter(char ch) {
+        // Determine if the character is uppercase or lowercase
+        boolean isUpperCase = Character.isUpperCase(ch);
+        
+        // Convert the character to lowercase for simplicity
+        ch = Character.toLowerCase(ch);
+        System.out.println("ch is:"+ch);
+        // Find the mirrored character
+        char mirroredChar = (char) ('a' + ('z' - ch));
+        System.out.println("mirrorchar is: "+mirroredChar);//already in lowercase so we need to apply check only for UpperCase character
+        // Convert back to uppercase if the original character was uppercase
+        if (isUpperCase) {
+            mirroredChar = Character.toUpperCase(mirroredChar);
+        }
+        
+        return mirroredChar;
+    }
+    public static char checkMirrorchar(char s)
+    {
+    	char lower=Character.toLowerCase(s);
+    	char mirrorchar=(char)('a'+('z'-lower));
+    	if(Character.isUpperCase(s))
+    	{
+    		Character.toUpperCase(mirrorchar);
+    	}
+		return mirrorchar;
+    	
+    }
+	}
+
+

@@ -1,0 +1,14 @@
+package com.juley27;
+
+public class CountNoOfPunctuation {
+
+	public static void main(String[] args) {
+		String str="Shubh#an@gi!!";
+		int cnt=0;
+		if(str.contains("#")||str.contains("@")||str.contains("!")) {
+			cnt++;
+		}
+
+	}
+
+}

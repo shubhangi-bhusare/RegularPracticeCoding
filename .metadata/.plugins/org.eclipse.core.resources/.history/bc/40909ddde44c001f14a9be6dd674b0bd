@@ -1,0 +1,55 @@
+package com.juley27;
+
+import java.util.Scanner;
+
+public class TrianglePattern {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Choice-\n1.Triangle1 \n2.Triangle2 \n3.Triangle2 \n4.Triangle2");
+		int ch;
+		do {
+			 ch=sc.nextInt();
+			switch(ch) {
+			case 1:
+				int num1=6;
+				for(int i=0;i<num1;i++) {
+					for(int j=0;j<=i;j++) {
+						System.out.print("*");
+					}
+					System.out.println();
+				}
+				break;
+			case 2:
+				int num2=6;
+				for(int i=num2;i>=0;i--) {
+					for(int j=0;j<i;j++) {
+						System.out.print("*");
+					}
+					System.out.println();
+				}
+
+				break;
+			case 3:
+				int num3=6;
+				for(int i=0;i<num3;i++)
+				{
+					for(int k=0;k<=6-i;k++)
+					{
+						System.out.print(" ");
+					}
+					for(int j=0;j<=i;j++)
+					{
+						System.out.print("* ");
+					}
+					System.out.println();
+				}
+				break;
+			
+			}
+			
+		}while(ch!=2);
+		
+	}
+
+}

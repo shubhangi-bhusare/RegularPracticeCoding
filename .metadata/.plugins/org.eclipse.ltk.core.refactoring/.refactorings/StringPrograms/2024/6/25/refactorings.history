@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;StringIsValid.java&apos; to &apos;StringPrograms/src/ArrayPrograms&apos;&#x0D;&#x0A;- Original project: &apos;StringPrograms&apos;&#x0D;&#x0A;- Destination element: &apos;StringPrograms/src/ArrayPrograms&apos;&#x0D;&#x0A;- Original element: &apos;StringIsValid.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;ArrayPrograms" element1="/src&lt;{StringIsValid.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1719087669971" units="1" version="1.0"/>
+</session>

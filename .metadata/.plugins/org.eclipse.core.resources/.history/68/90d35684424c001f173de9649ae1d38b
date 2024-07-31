@@ -1,0 +1,27 @@
+package com.juley27;
+
+import java.util.Scanner;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter choice -\n1.Inbuild reverse function\\n 2.Reverse by Array");
+		int ch=sc.nextInt();
+		boolean flag=false;
+		do {
+			switch(ch) {
+			case 1:
+				String str="Shubhangi";
+				StringBuilder st=new StringBuilder(str);
+				System.out.println(st.reverse());
+				break;
+			case 2:
+				break;
+				
+			}
+		}while(flag);
+		
+	}
+
+}
