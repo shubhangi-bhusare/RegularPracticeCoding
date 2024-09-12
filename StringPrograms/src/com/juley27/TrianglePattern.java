@@ -38,7 +38,7 @@ public class TrianglePattern {
 				break;
 			case 3:
 				int num3=6;
-				for(int i=0;i<num3;i++)
+				for(int i=0;i<=num3;i++)
 				{
 					for(int k=0;k<6-i;k++)
 					{

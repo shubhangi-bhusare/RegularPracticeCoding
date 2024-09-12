@@ -8,7 +8,7 @@ import java.util.Set;
 public class PrintDuplicateEleInArray {
 
 	public static void main(String[] args) {
-		int arr1[]= {2,3,4,4,2,5,3,8,8,7,6,6};
+		int arr1[]= {2,3,2,4,4,2,5,8,8,7,6,6};
 		Integer arr[]=new Integer[] {2,3,4,4,2,5,3,8,8,7,6,6};
 		
 		for(int i=0;i<arr.length;i++)
@@ -21,8 +21,10 @@ public class PrintDuplicateEleInArray {
 				}
 			}
 		} /* OR */
-//		Set<Integer> set=new HashSet();
-//		Arrays.stream(arr1).filter(num ->!set.add(num)).forEach(i->System.out.println(i));
+		System.out.println();
+		Set<Integer> set=new HashSet();
+		Arrays.stream(arr1).filter(num ->!set.add(num)).distinct().forEach(i->System.out.print(i+" "));
+		Arrays.stream(arr1).filter(num ->!set.add(num)).distinct().toArray();
 
 
 		

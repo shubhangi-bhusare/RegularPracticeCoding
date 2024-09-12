@@ -10,11 +10,11 @@ public class Fibonacci {
 		System.out.println("Enter the number");
 		int n=sc.nextInt();
 		int a=0;
-		int b=1;
-		for(int i=2;i<n;i++)
+		int b=1,c=0;
+		for(int i=0;i<=n;i++)
 		{
-			int c=a+b;
-			System.out.print(c+" ");
+			System.out.print(a+" ");
+			 c=a+b;
 			a=b;
 			b=c;
 		}

@@ -15,22 +15,33 @@ public class arrayProgram
 	public static void main(String[] args)
 	{
 		int arr[]={1,2,5,3,3,6,3,8,8,8,6,1};
-		for(int i=0;i<arr.length;i++)
+		
+//		for(int i=0;i<arr.length;i++)
+//		{
+//			int count=0;
+//			for(int j=i+1;j<arr.length;j++)
+//			{
+//				if(arr[i]==arr[j] && i!=j)
+//				{
+//					count++;				
+//				}
+//				
+//			}
+//			if(count==0)
+//			{
+//				System.out.print(arr[i]+" ");
+//			}
+//		}
+		int j=1;
+		for(int i=1;i<arr.length;i++)
 		{
-			int count=0;
-			for(int j=0;j<=i;j++)
+			if(arr[i]!=arr[j-1])
 			{
-				if(arr[i]==arr[j])
-				{
-					count++;				
-				}
-				
-			}
-			if(count>1)
-			{
-				System.out.print(arr[i]+" ");
+				arr[j]=arr[i];
+				j++;
 			}
 		}
+		System.out.println(j);
 	}
 	 
 	

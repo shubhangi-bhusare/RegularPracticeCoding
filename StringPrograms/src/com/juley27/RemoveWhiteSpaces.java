@@ -13,7 +13,7 @@ public class RemoveWhiteSpaces {
 			switch(ch) {
 			case 1:
 				String str="Shubhangi manik bhusare";
-				String p="\\s";
+				String p=" ";
 				str=str.replaceAll(p,"");
 				System.out.println("String after removal of white spaces: \n"+str);
 				break;
